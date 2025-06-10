@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" id="theme" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link href="output.css" rel="stylesheet" />
+    <title>YZCodesStuff</title>
+    <style>
+      .p1 {
+        font-family: "Monaco", "Courier New", monospace;
+      }
+    </style>
+  </head>
+
+  <body
+    class="p1 p-8 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-white"
+  >
+    <button
+      style="cursor: pointer"
+      class="text-4xl fa fa-sun absolute border-4 rounded-full p-4"
+      id="themeToggle"
+    ></button>
+
+    <div class="flex justify-center">
+      <img src="images/profile.png" class="h-20vh rounded-full" />
+    </div>
+    <div class="text-4xl flex my-4 justify-center">YZCodesStuff</div>
+    <div
+      class="flex content-evenly items-stretch justify-evenly my-4 bg-slate-950 rounded-xl shadow-sm"
+    >
+      <a class="py-2 p-1 md:px-8 lg:px-20 text-white" href="home.html">Home</a>
+      <a class="py-2 p-1 md:px-8 lg:px-20 text-white" href="my-projects.html"
+        >Projects</a
+      >
+      <a class="py-2 p-1 md:px-8 lg:px-20 text-white bg-yellow-600">About</a>
+      <a class="py-2 p-1 md:px-8 lg:px-20 text-white" href="contact.html"
+        >Contact</a
+      >
+    </div>
+    <div class="p-8 rounded-2xl bg-white dark:bg-gray-700">
+      <div class="flex flex-col md:flex-row my-6">
+        <img class="md:px-8 lg:px-20" src="images/profile.png" />
+        <p class="text-2xl py-2 mb-6">
+          Hello! &#128075; My name is Yu Zhe! I am from the small island nation
+          of Singapore and am currently working as a software engineer.
+        </p>
+      </div>
+      <div class="flex flex-col md:flex-row my-6">
+        <p class="text-2xl py-2 mb-6 md:px-8 lg:px-20">
+          During my free time, I like to play video games &#127918;, practice
+          playing my guitar &#127928; and work out &#128170;. I also like to do
+          various personal coding projects &#128187;, some of which you can view
+          on this website!
+        </p>
+        <img src="images/profile.png" />
+      </div>
+      <div class="flex flex-col my-6 md:px-8 lg:px-20">
+        <div class="text-2xl py-2 mb-6">
+          I am proficient in the following coding languages and services:
+        </div>
+        <div
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 text-8xl justify-items-center gap-6"
+        >
+          <div
+            class="aspect-square flex flex-col items-center bg-gray-200 dark:bg-gray-500 p-4 rounded-2xl"
+          >
+            <i class="devicon-javascript-plain justify-center mb-2"></i>
+            <div class="text-xl">JavaScript</div>
+          </div>
+          <div
+            class="aspect-square flex flex-col items-center bg-gray-200 dark:bg-gray-500 p-4 rounded-2xl"
+          >
+            <i class="devicon-html5-plain justify-center mb-2"></i>
+            <div class="text-xl">HTML5</div>
+          </div>
+          <div
+            class="aspect-square flex flex-col items-center bg-gray-200 dark:bg-gray-500 p-4 rounded-2xl"
+          >
+            <i class="devicon-java-plain justify-center mb-2"></i>
+            <div class="text-xl">Java</div>
+          </div>
+          <div
+            class="aspect-square flex flex-col items-center bg-gray-200 dark:bg-gray-500 p-4 rounded-2xl"
+          >
+            <i class="devicon-css3-plain justify-center mb-2"></i>
+            <div class="text-xl">CSS</div>
+          </div>
+          <div
+            class="aspect-square flex flex-col items-center bg-gray-200 dark:bg-gray-500 p-4 rounded-2xl"
+          >
+            <i
+              class="devicon-amazonwebservices-plain-wordmark justify-center mb-2"
+            ></i>
+            <div class="text-xl">AWS</div>
+          </div>
+          <div
+            class="aspect-square flex flex-col items-center bg-gray-200 dark:bg-gray-500 p-4 rounded-2xl"
+          >
+            <i class="devicon-flutter-plain justify-center mb-2"></i>
+            <div class="text-xl">Flutter</div>
+          </div>
+          <div
+            class="aspect-square flex flex-col items-center bg-gray-200 dark:bg-gray-500 p-4 rounded-2xl"
+          >
+            <i class="devicon-dart-plain justify-center mb-2"></i>
+            <div class="text-xl">Dart</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="mt-10 border-2" />
+    <footer class="mb-8">
+      <small class="text-gray-800 dark:text-gray-300">
+        <p>This website is built with HTML, JavaScript and Tailwind CSS.</p>
+        © Ng Yu Zhe. All Rights Reserved.
+      </small>
+    </footer>
+    <script src="js/general.js"></script>
+  </body>
+</html>

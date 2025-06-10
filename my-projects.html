@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" id="theme" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link href="output.css" rel="stylesheet" />
+    <title>YZCodesStuff</title>
+    <style>
+      .p1 {
+        font-family: "Monaco", "Courier New", monospace;
+      }
+    </style>
+  </head>
+
+  <body
+    class="p1 p-8 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-white"
+  >
+    <button
+      style="cursor: pointer"
+      class="text-4xl fa fa-sun absolute border-4 rounded-full p-4"
+      id="themeToggle"
+    ></button>
+
+    <div class="flex justify-center">
+      <img src="images/profile.png" class="h-20vh rounded-full" />
+    </div>
+    <div class="text-4xl flex my-4 justify-center">YZCodesStuff</div>
+    <div
+      class="flex content-evenly items-stretch justify-evenly my-4 bg-slate-950 rounded-xl shadow-sm"
+    >
+      <a class="py-2 p-1 md:px-8 lg:px-20 text-white" href="home.html">Home</a>
+      <a class="py-2 p-1 md:px-8 lg:px-20 text-white bg-yellow-600" href="my-projects.html">Projects</a>
+      <a class="py-2 p-1 md:px-8 lg:px-20 text-white" href="about.html">About</a>
+      <a class="py-2 p-1 md:px-8 lg:px-20 text-white" href="contact.html">Contact</a>
+    </div>
+    <div class="p-8 rounded-2xl bg-white dark:bg-gray-700">
+      <div class="text-2xl">My projects:</div>
+      <nav class="flex flex-col sm:flex-row gap-4 justify-between my-4">
+        <div class="flex gap-2">
+          <button
+            style="cursor: pointer"
+            class="px-6 py-4 border-2 dark:border-white rounded-full bg-gray-900 text-white"
+            data-filter="all"
+          >
+            All
+          </button>
+          <button
+            style="cursor: pointer"
+            class="px-6 py-4 border-2 dark:border-white rounded-full"
+            data-filter="web"
+          >
+            Web Apps
+          </button>
+          <button
+            style="cursor: pointer"
+            class="px-6 py-4 border-2 dark:border-white rounded-full"
+            data-filter="mobile"
+          >
+            Mobile Apps
+          </button>
+        </div>
+        <!-- <div class="flex gap-2 ml-auto">
+          <button
+            style="cursor: pointer"
+            class="fa fa-th p-4 border-2 dark:border-white rounded-full bg-gray-900 text-white"
+            id="grid"
+          ></button>
+          <button
+            style="cursor: pointer"
+            class="fa fa-list p-4 border-2 dark:border-white rounded-full bg-gray-900 text-white"
+            id="list"
+          ></button>
+        </div> -->
+      </nav>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12"
+        id="projects-container"
+      >
+        <div
+          class="flex space-y-2 p-2 rounded-xl bg-gray-200 dark:bg-gray-500 justify-center transform-container hover:container"
+          data-category="web"
+        >
+          <video controls muted autoplay loop>
+            <source src="images/portfolio-website-video.mp4" type="video/mp4">
+          </video>
+          <div class="flex justify-between mt-2" id="desc">
+          <div class="flex-col p-6">
+            <div class="text-2xl">Portfolio Website</div>
+            <div class="text-sm">You are here right now.</div>
+            <small class="border-2 p-1" >HTML</small>
+            <small class="border-2 p-1 ">Javascript</small>
+            <small class="border-2 p-1">Tailwind.CSS</small>
+            <div><small>Built in 2025</small></div>
+          </div> 
+          <div>
+            <a class="text-6xl fa-brands fa-github" href="http://www.google.com"></a>
+          </div>
+          </div>
+        </div>
+        <div
+          class="space-y-2 project-card p-2 bg-gray-200 dark:bg-gray-500 flex"
+          data-category="mobile" id="project-desc" 
+        >
+          <img
+            src="https://shismqklzntzxworibfn.supabase.co/storage/v1/object/public/previews/c0b6c057-ae87-4f35-bd76-41e205aab47a.png"
+            alt="Spendings Tracker App"
+          />
+          <div class="flex justify-between mt-2">
+          <div class="flex-col p-6">
+            <div class="text-2xl">Spendings Tracker App</div>
+            <div class="text-sm">A simple application that was built because I needed to track my spendings when outside.</div>
+            <small class="border-2 m-1">HTML</small>
+            <small class="border-2 m-1 ">Javascript</small>
+            <small class="border-2 m-1">Tailwind.CSS</small>
+            <div><small>Work in Progress</small></div>
+          </div>
+          <div>
+            <a class="text-6xl fa-brands fa-github" href="http://www.google.com"></a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="mt-10 border-2" />
+    <footer class="mb-8">
+      <small class="text-gray-800 dark:text-gray-300">
+        <p>This website is built with HTML, JavaScript and Tailwind CSS.</p>
+        © Ng Yu Zhe. All Rights Reserved.
+      </small>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/general.js"></script>
+    <script type="module" src="js/animation.js"></script>
+  </body>
+</html>
